@@ -18,7 +18,8 @@ const Hero = () => {
                   </div>
 
                   <div className="relative">
-                        <img className="w-[1000px] opacity-0 animate-fade-in-delay-3" src={photo} alt="" />
+                        <img className="w-[1000px] opacity-0 animate-fade-in-delay-3 filter brightness-70" src={photo} alt="" />
+                        <div className="absolute bottom-0 left-0 w-full h-100 bg-gradient-to-t from-black/70 to-transparent"></div>
                   </div>
             </section>
       )
