@@ -106,6 +106,8 @@ const Hero = () => {
 
                               <div className="rounded-[28px] overflow-hidden bg-[#0f1220] backdrop-blur-xl border border-white/10">
 
+                                    <div className="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full"></div>
+
                                     <img
                                           src={photo}
                                           alt="Yusuf"
