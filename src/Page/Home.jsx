@@ -7,7 +7,7 @@ import AboutMe from "../Components/AboutMe";
 import Projects from "../Components/Projects";
 import Testimonials from "../Components/Testimonials";
 import Conclution from "../Components/Conclution";
-
+import Footer from "@/Components/footer";
 
 
 const Home = () => {
@@ -21,6 +21,7 @@ const Home = () => {
                   <Projects />
                   <Testimonials />
                   <Conclution />
+                  <Footer/>
             </div>
       )
 }

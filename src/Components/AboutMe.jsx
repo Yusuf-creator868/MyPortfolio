@@ -19,7 +19,7 @@ const AboutMe = () => {
       }, []);
 
       return (
-            <section id="about" className="">
+            <section id="about" className="mt-20">
                   <LogoLoop
                         logos={[
                               {
@@ -58,47 +58,224 @@ const AboutMe = () => {
                   />
 
 
-                  <div className="flex flex-col justify-center md:flex-row items-center gap-50 max-w-[1400px] mx-auto my-50 p-4">
-                        {/* Skills */}
-                        <div className="flex flex-col items-center gap-10" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                              {/* website development */}
-                              <div className="flex items-start gap-5 px-10 py-5 bg-gradient-to-br from-[#0f1220] to-[#14182b] rounded-[10px] w-[300px]">
-                                    <Code />
-                                    <h1>Website Development</h1>
-                              </div>
+                  <div className="relative overflow-hidden max-w-[1400px] mx-auto my-30 px-6">
 
-                              {/* UI/UX design */}
-                              <div className="flex items-start gap-5 px-10 py-5 bg-gradient-to-br from-[#0f1220] to-[#14182b] rounded-[10px] w-[300px]">
-                                    <Palette />
-                                    <h1>UI/UX Design</h1>
-                              </div>
-
-                              {/* Deployment */}
-                              <div className="flex items-start justify-start gap-5 px-10 py-5 bg-gradient-to-br from-[#0f1220] to-[#14182b] rounded-[10px] w-[300px]">
-                                    <Server />
-                                    <h1>Deployment</h1>
-                              </div>
+                        {/* Background Glow */}
+                        <div className="absolute inset-0 -z-10">
+                              <div className="absolute top-0 left-0 w-96 h-200 bg-blue-500/20 blur-[150px] rounded-full"></div>
+                              <div className="absolute bottom-0 right-0 w-96 h-200 bg-cyan-500/20 blur-[150px] rounded-full"></div>
                         </div>
 
+                        <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-20">
 
+                              {/* Skills */}
+                              <div
+                                    className="flex flex-col gap-6"
+                                    data-aos="fade-right"
+                                    data-aos-duration="1000"
+                              >
 
-                        {/* About me */}
-                        <div className="text-start space-y-10" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                              <h1 className="font-bold text-5xl">About <span className="text-blue-500">me:</span></h1>
-                              <p className="max-w-[600px] text-gray-300">I’m a full-stack developer with a strong interest in building scalable products and startups.
-                                    I enjoy working on ideas from concept to execution, focusing on clean design, performance,
-                                    and real-world impact.</p>
+                                    <div className="
+                group
+                relative
+                overflow-hidden
+                flex items-center
+                gap-5
+                px-8
+                py-6
+                w-[340px]
+                rounded-3xl
+                bg-white/5
+                border
+                border-white/10
+                backdrop-blur-xl
+                hover:scale-105
+                hover:border-blue-500/50
+                transition-all
+                duration-300
+                cursor-pointer
+            ">
+                                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-blue-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-all duration-1000"></div>
 
-                              <div className="flex gap-20">
-                                    <div className="space-y-2">
-                                          <h1 className="text-4xl font-bold">20 <span className="text-blue-500">+</span></h1>
-                                          <h2>Completed projects</h2>
+                                          <Code className="text-blue-500 text-3xl" />
+
+                                          <div>
+                                                <h2 className="font-semibold text-lg">
+                                                      Website Development
+                                                </h2>
+                                                <p className="text-sm text-gray-400">
+                                                      React, Django & Full Stack Apps
+                                                </p>
+                                          </div>
                                     </div>
-                                    <div className="space-y-2">
-                                          <h1 className="text-4xl font-bold">3 <span className="text-blue-500">+</span></h1>
-                                          <h2>Years of experince</h2>
+
+                                    <div className="
+                group
+                relative
+                overflow-hidden
+                flex items-center
+                gap-5
+                px-8
+                py-6
+                w-[340px]
+                rounded-3xl
+                bg-white/5
+                border
+                border-white/10
+                backdrop-blur-xl
+                hover:scale-105
+                hover:border-purple-500/50
+                transition-all
+                duration-300
+                cursor-pointer
+            ">
+                                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-purple-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-all duration-1000"></div>
+
+                                          <Palette className="text-purple-500 text-3xl" />
+
+                                          <div>
+                                                <h2 className="font-semibold text-lg">
+                                                      UI / UX Design
+                                                </h2>
+                                                <p className="text-sm text-gray-400">
+                                                      Modern, responsive user experiences
+                                                </p>
+                                          </div>
                                     </div>
+
+                                    <div className="
+                group
+                relative
+                overflow-hidden
+                flex items-center
+                gap-5
+                px-8
+                py-6
+                w-[340px]
+                rounded-3xl
+                bg-white/5
+                border
+                border-white/10
+                backdrop-blur-xl
+                hover:scale-105
+                hover:border-cyan-500/50
+                transition-all
+                duration-300
+                cursor-pointer
+            ">
+                                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-cyan-500/10 to-transparent -translate-x-full group-hover:translate-x-full transition-all duration-1000"></div>
+
+                                          <Server className="text-cyan-500 text-3xl" />
+
+                                          <div>
+                                                <h2 className="font-semibold text-lg">
+                                                      Deployment
+                                                </h2>
+                                                <p className="text-sm text-gray-400">
+                                                      VPS, Docker & Production Hosting
+                                                </p>
+                                          </div>
+                                    </div>
+
                               </div>
+
+                              {/* About */}
+                              <div
+                                    className="max-w-[650px] space-y-8"
+                                    data-aos="fade-left"
+                                    data-aos-duration="1000"
+                              >
+
+                                    <h1 className="text-5xl md:text-6xl font-black leading-tight">
+                                          About{" "}
+                                          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                                                Me
+                                          </span>
+                                    </h1>
+
+                                    <p className="text-gray-300 text-lg leading-relaxed">
+                                          I'm a full-stack developer passionate about building scalable
+                                          digital products and startups. I enjoy transforming ideas into
+                                          real applications with clean architecture, modern design and
+                                          excellent user experience.
+                                    </p>
+
+                                    {/* Tech Stack */}
+                                    <div className="flex flex-wrap gap-3">
+
+                                          {[
+                                                "React",
+                                                "Django",
+                                                "Python",
+                                                "PostgreSQL",
+                                                "Tailwind",
+                                          ].map((tech) => (
+                                                <span
+                                                      key={tech}
+                                                      className="
+                            px-4
+                            py-2
+                            rounded-full
+                            bg-blue-500/10
+                            border
+                            border-blue-500/20
+                            text-blue-400
+                            text-sm
+                        "
+                                                >
+                                                      {tech}
+                                                </span>
+                                          ))}
+
+                                    </div>
+
+                                    {/* Stats */}
+                                    <div className="flex flex-wrap gap-6 pt-4">
+
+                                          <div className="
+                    px-8
+                    py-6
+                    rounded-3xl
+                    bg-white/5
+                    border
+                    border-white/10
+                    backdrop-blur-xl
+                    hover:scale-105
+                    transition-all
+                    duration-300
+                ">
+                                                <h2 className="text-5xl font-black text-blue-500">
+                                                      20+
+                                                </h2>
+                                                <p className="text-gray-400 mt-2">
+                                                      Completed Projects
+                                                </p>
+                                          </div>
+
+                                          <div className="
+                    px-8
+                    py-6
+                    rounded-3xl
+                    bg-white/5
+                    border
+                    border-white/10
+                    backdrop-blur-xl
+                    hover:scale-105
+                    transition-all
+                    duration-300
+                ">
+                                                <h2 className="text-5xl font-black text-cyan-500">
+                                                      3+
+                                                </h2>
+                                                <p className="text-gray-400 mt-2">
+                                                      Years Experience
+                                                </p>
+                                          </div>
+
+                                    </div>
+
+                              </div>
+
                         </div>
 
                   </div>

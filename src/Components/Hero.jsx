@@ -1,28 +1,136 @@
 import React from "react";
-import photo from '../assets/Mypicture.png'
+import photo from "../assets/Mypicture.png";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Hero = () => {
-      return(
-            <section id="home" className="max-w-325 flex flex-col-reverse md:flex-row items-center mt-30 mx-auto mb-50">
-                  <div className="space-y-10">
-                        <span className="opacity-0 animate-fade-in text-4xl md:text-6xl font-black tracking-tight">Hi, I'm</span>
-                        <span className="text-blue-500 opacity-0 animate-fade-in-delay-1 text-4xl md:text-6xl font-black tracking-tight">{" "}Yusuf</span>
-                        <h1 className="text-3xl font-bold mt-3 opacity-0 animate-fade-in-delay-1 ">Full-stack <span className="text-blue-500">Developer |</span></h1>
-                        <p className="text-xl max-w-[850px] px-7 opacity-0 animate-fade-in-delay-2 text-start">A passionate full-stack web developer building modern, 
-                              scalable web applications focused on real-world solutions 
-                              and impactful products.</p>
-                        <div className="flex gap-4 px-7">
-                              <button className="px-6 py-3 rounded-2xl bg-gradient-to-r from-blue-600 to-blue-800 text-white font-semibold shadow-lg shadow-blue-900/30 hover:scale-105 hover:shadow-blue-500/40 transition-all duration-300 animate-fade-in-delay-3 cursor-pointer">View Projects</button>
-                              <button className="px-6 py-3 rounded-2xl border border-blue-500/30 bg-white/5 backdrop-blur-md text-blue-400 font-semibold hover:bg-blue-500/10 hover:text-white transition-all duration-300 cursor-pointer">Contact Me</button>
+      return (
+            <section
+                  id="home"
+                  className="relative max-w-[1350px] mx-auto min-h-screen mt-[75px] flex flex-col-reverse lg:flex-row items-center justify-between px-6 overflow-hidden"
+            >
+                  {/* Background */}
+                  <div className="absolute inset-0 -z-10 overflow-hidden">
+                        <div className="absolute top-20 left-0 w-[400px] h-[400px] bg-blue-500/20 blur-[160px] rounded-full"></div>
+                        <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-cyan-500/20 blur-[160px] rounded-full"></div>
+                  </div>
+
+                  {/* Left */}
+                  <div className="max-w-[700px] space-y-8 text-center lg:text-left">
+
+                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-400 text-sm">
+                              🚀 Building products & startups
+                        </div>
+
+                        <h1 className="text-5xl md:text-7xl font-black leading-tight">
+                              Hi, I'm{" "}
+                              <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                                    Yusuf
+                              </span>
+                        </h1>
+
+                        <h2 className="text-2xl md:text-3xl font-bold text-white/90">
+                              Full-Stack Developer
+                        </h2>
+
+                        <p className="text-lg text-gray-400 leading-relaxed max-w-[650px]">
+                              I help businesses and startups build modern websites and web applications that attract customers, improve efficiency, and bring ideas to life.
+                        </p>
+
+                        {/* Tech stack */}
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-3">
+
+                              {[
+                                    "React",
+                                    "Django",
+                                    "Python",
+                                    "PostgreSQL",
+                                    "Tailwind",
+                              ].map((item) => (
+                                    <span
+                                          key={item}
+                                          className="px-4 py-2 rounded-full bg-white/5 border border-white/10 text-gray-300"
+                                    >
+                                          {item}
+                                    </span>
+                              ))}
+
+                        </div>
+
+                        {/* Buttons */}
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-4 pt-3">
+
+                              <button className="group px-7 py-4 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 font-semibold hover:scale-105 transition-all cursor-pointer flex items-center gap-2">
+                                    View Projects
+
+                                    <GoArrowUpRight
+                                          size={20}
+                                          className="group-hover:-translate-y-1 group-hover:translate-x-1 transition"
+                                    />
+                              </button>
+
+                              <button className="px-7 py-4 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl hover:bg-white/10 transition-all cursor-pointer">
+                                    Contact Me
+                              </button>
+
+                        </div>
+
+                        {/* Stats */}
+                        <div className="flex flex-wrap justify-center lg:justify-start gap-8 pt-8">
+
+                              <div>
+                                    <h3 className="text-4xl font-black text-blue-500">20+</h3>
+                                    <p className="text-gray-400">Projects</p>
+                              </div>
+
+                              <div>
+                                    <h3 className="text-4xl font-black text-blue-500">3+</h3>
+                                    <p className="text-gray-400">Years Experience</p>
+                              </div>
+
+                              <div>
+                                    <h3 className="text-4xl font-black text-blue-500">100%</h3>
+                                    <p className="text-gray-400">Passion</p>
+                              </div>
+
                         </div>
                   </div>
 
-                  <div className="relative">
-                        <img className="w-[1000px] opacity-0 animate-fade-in-delay-3 filter brightness-70" src={photo} alt="" />
-                        <div className="absolute bottom-0 left-0 w-full h-10 bg-gradient-to-t from-black/70 to-transparent"></div>
+                  {/* Right */}
+                  <div className="relative mb-12 lg:mb-0 float">
+
+                        {/* Glow */}
+                        <div className="absolute inset-0 bg-blue-500/20 blur-[120px] rounded-full"></div>
+
+                        {/* Image Card */}
+                        <div className="relative p-2 rounded-[32px] bg-gradient-to-br from-blue-500/30 to-cyan-500/20">
+
+                              <div className="rounded-[28px] overflow-hidden bg-[#0f1220] backdrop-blur-xl border border-white/10">
+
+                                    <img
+                                          src={photo}
+                                          alt="Yusuf"
+                                          className="w-[420px] object-cover hover:scale-105 transition duration-700"
+                                    />
+
+                              </div>
+
+                        </div>
+
+
+                        {/* Floating Card */}
+                        <div className="absolute -left-10 top-12 px-5 py-3 rounded-2xl bg-white/5 backdrop-blur-xl border border-white/10 hidden md:block">
+                              <p className="text-sm text-gray-400">
+                                    Stack
+                              </p>
+
+                              <h4 className="font-semibold">
+                                    React + Django
+                              </h4>
+                        </div>
+
                   </div>
             </section>
-      )
-}
+      );
+};
 
-export default Hero
+export default Hero;
