@@ -1,16 +1,116 @@
-# React + Vite
+# 🚀 Yusuf Yakubov Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!
 
-Currently, two official plugins are available:
+A modern and responsive portfolio built to showcase my projects, skills, and journey as a Full-Stack Developer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🌐 **Live Demo:** [Your Portfolio URL]
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ About
 
-## Expanding the ESLint configuration
+I'm Yusuf Yakubov, a Full-Stack Developer passionate about building modern websites, web applications, and digital products.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I enjoy transforming ideas into real-world solutions that help businesses grow, improve efficiency, and create better experiences for their customers.
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* ⚛️ React
+* 🎨 Tailwind CSS
+* 📱 Responsive Design
+
+### Backend
+
+* 🐍 Django
+* 🔥 Django REST Framework
+
+### Database
+
+* 🐘 PostgreSQL
+
+### Tools
+
+* 🐙 Git & GitHub
+* ☁️ Vercel
+* 🚀 Deployment & Hosting
+
+---
+
+## 🌟 Features
+
+* 🎯 Modern UI/UX Design
+* 📱 Fully Responsive
+* ⚡ Fast Performance
+* 🌙 Dark Theme
+* ✨ Smooth Animations
+* 📬 Contact Form
+* 🖼️ Project Showcase
+* 💬 Testimonials Section
+
+---
+
+## 📂 Featured Projects
+
+### ☕ Coffee Website
+
+Modern coffee shop platform with a clean design and responsive interface.
+
+### ✅ ToDo List App
+
+Task management application with create, update, and delete functionality.
+
+### ✈️ Travel Website
+
+Beautiful travel landing page focused on user experience and modern design.
+
+### 🚀 FlowUp
+
+Productivity-focused application designed to help users organize and manage their day.
+
+---
+
+## 🎯 Goals
+
+* Build impactful digital products
+* Work with startups and businesses
+* Continue learning modern technologies
+* Create solutions that solve real-world problems
+
+---
+
+## 📫 Contact Me
+
+📧 Email: [your-email@example.com](mailto:your-email@example.com)
+
+💼 LinkedIn: Your LinkedIn
+
+🐙 GitHub: https://github.com/yourusername
+
+📍 Tashkent, Uzbekistan
+
+---
+
+## ⚡ Running Locally
+
+```bash
+git clone https://github.com/yourusername/portfolio.git
+
+cd portfolio
+
+npm install
+
+npm run dev
+```
+
+---
+
+## 🤝 Let's Build Something Amazing
+
+If you have a project idea, startup, or business that needs a modern web solution, feel free to reach out.
+
+⭐ Don't forget to star the repository if you like the project!
