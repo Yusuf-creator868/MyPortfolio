@@ -9,17 +9,18 @@ import Testimonials from "../Components/Testimonials";
 import Conclution from "../Components/Conclution";
 
 
+
 const Home = () => {
-      return(
+      return (
             <div className="min-h-screen overflow-x-hidden">
                   {/* <ThemeToggle/> */}
-                  <StarBackGround/>
-                  <Navbar/>
-                  <Hero/>
-                  <AboutMe/>
-                  <Projects/>
-                  <Testimonials/>
-                  <Conclution/>
+                  <StarBackGround />
+                  <Navbar />
+                  <Hero />
+                  <AboutMe />
+                  <Projects />
+                  <Testimonials />
+                  <Conclution />
             </div>
       )
 }

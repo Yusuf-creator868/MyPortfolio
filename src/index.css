@@ -158,44 +158,47 @@
       text-align: center;
 }
 
-.carusel {
-      margin: 100px auto;
-      width: 90%;
-      display: flex;
-      align-items: center;
-      justify-items: center;
-      overflow-x: auto;
-      scrollbar-width: none;      /* Firefox */
-      -ms-overflow-style: none;
-      -webkit-overflow-scrolling: touch;
-    }
-
-.card{
-      flex: 0 0 5em;
+.carusel-container {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.carusel::-webkit-scrollbar{
+.carousel-track {
+  display: flex;
+  gap: 50px; /* space between cards */
+  padding: 0 50px; /* optional, keeps margin inside track */
+  width: max-content; /* track shrinks to its content */
+  animation: scroll 10s linear infinite;
+}
+
+.card {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); /* make sure you duplicate cards exactly */
+  }
+}
+
+
+
+.carusel-container::-webkit-scrollbar{
       display: none;
 }
 
     
-    .group {
-      display: flex;
-      align-items: center;
-      align-items: center;
-      gap: 80px;
-      animation: scroll-x 30s linear infinite;
-      padding-right: 4em;
-    }
-    
-    @keyframes scroll-x {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
-    }
 
 .scrolling{
       scrollbar-width: none;     /* Firefox */
