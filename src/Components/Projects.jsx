@@ -4,6 +4,9 @@ import coffee from "../assets/project1.png";
 import todolist from "../assets/todolist.png";
 import dolanan from "../assets/dolanan.png";
 import flowup from "../assets/flowup.png";
+import hongkong from "../assets/HongKong.png";
+import Restaurant from "../assets/restuarant.png"
+import website from "../assets/website.png"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -17,32 +20,32 @@ const Projects = () => {
 
       const projects = [
             {
-                  image: coffee,
-                  url: "https://coffee-frontend-liart.vercel.app",
-                  name: "Coffee Website",
-                  description: "Modern coffee shop platform with dashboard & clean UI.",
+                  image: hongkong,
+                  url: "https://hong-frontend.vercel.app/",
+                  name: "Hong Kong academy",
+                  description: "A clean, professional website for an educational institution.",
                   languages: ["React", "Django", "Tailwind"],
             },
             {
-                  image: todolist,
-                  url: "https://todolistdjosefprog-frontend.vercel.app",
-                  name: "ToDo List",
-                  description: "Task manager with CRUD functionality.",
+                  image: website,
+                  url: "https://proposal-seven-jade.vercel.app/",
+                  name: "Your Business Needs a Website",
+                  description: "A professional business proposal website for client presentations.",
+                  languages: ["React", "Tailwind"],
+            },
+            {
+                  image: Restaurant,
+                  url: "https://bazar-front-two.vercel.app/",
+                  name: "Bazar Restaurant Website",
+                  description: "A modern restaurant website with an elegant dining experience.",
                   languages: ["React", "Django", "Tailwind"],
             },
             {
                   image: dolanan,
-                  url: "https://todolistdjosefprog-frontend.vercel.app",
-                  name: "Travel Website",
-                  description: "Modern travel landing page with smooth UX.",
-                  languages: ["React", "Django", "Tailwind"],
-            },
-            {
-                  image: flowup,
-                  url: "https://todolistdjosefprog-frontend.vercel.app",
-                  name: "FlowUp",
-                  description: "Productivity app for daily task management.",
-                  languages: ["React", "Django", "Tailwind"],
+                  url: "https://travel-frontend-lyart.vercel.app/",
+                  name: "Startup",
+                  description: "Coming soon",
+                  languages: ["TOP SECRET"],
             },
       ];
 
@@ -61,13 +64,7 @@ const Projects = () => {
                               </p>
                         </div>
 
-                        <a
-                              href="https://github.com/"
-                              target="_blank"
-                              className="text-sm flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 transition"
-                        >
-                              GitHub <GoArrowUpRight size={16} />
-                        </a>
+
                   </div>
 
                   {/* Cards */}
